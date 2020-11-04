@@ -2,5 +2,5 @@ class Room < ApplicationRecord
   has_many :room_users
   has_many :users, through: :room_users
 
-  balidates :name, presencs: true
+  validates :name, presence: true
 end
